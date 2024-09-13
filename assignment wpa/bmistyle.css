@@ -1,0 +1,53 @@
+body
+{
+    font-family: georgia;
+    font-size: 18px;
+    background-image: linear-gradient(to bottom,#16325B,#41B3A2);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+h1
+{
+    text-align: center;
+    color: #F9E400;
+    font-size: 30px;
+    text-shadow: 2px 2px #E85C0D;
+}
+.gender-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 20px 10px ;
+}
+.container 
+{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px 30px 40px 30px ;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.input-container 
+{
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px 10px 20px 10px ;
+} 
+input[type="number"] 
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.button:hover
+{
+
+    padding: 20px 10px 10px 10px ;
+}
+
