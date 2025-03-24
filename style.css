@@ -276,96 +276,93 @@ button:hover {
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
-    gap: 6px;
-    align-items: center;
-    background: #333;
-    display: flex;
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
-    padding: 15px 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-  }
-  section {
-    padding-top: 300px; /* Reduce top padding for smaller screens */
-  }
-  nav ul {
-    margin-left: 0;
-  }
-  .home .container {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    text-align: center; /* Center text */
-    width: 90%;
-    margin: auto;
-  }
-  .text-content {
-    max-width: 100%; /* Make text take full width */
     text-align: center;
-    padding-top: 180px;
+    gap: 10px;
   }
-  .card {
-    width: 250px;
-    height: 250px;
-    margin-top: 20px; /* Add space between text and card */
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
   }
+
+  section {
+    padding-top: 250px; /* Adjust spacing */
+  }
+
+  .home .container,
   .about-container {
     flex-direction: column;
     text-align: center;
+    width: 90%;
   }
-  .about-content {
+
+  .text-content {
     max-width: 100%;
-  }
-  .skills ul {
-    justify-content: center;
+    text-align: center;
+    padding: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  .profile {
+    width: 180px;
+    height: 180px;
+  }
+  .home .container,
+  .about-container {
     flex-direction: column;
     text-align: center;
-  }
-  .profile {
-    width: 200px;
-    height: 200px;
+    width: 90%;
   }
   .name {
-    font-size: 40px;
+    font-size: 36px;
   }
-  .home .container {
-    width: 95%;
-  }
+
   .text-content {
-    max-width: 100%;
+    font-size: 16px;
   }
+
   .card {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 }
 
 @media (max-width: 480px) {
   body {
     text-align: left;
+    padding: 0 10px;
+  }
+  section {
+    padding-top: 150px; /* Adjust spacing */
+  }
+  .home .container,
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
   }
   .name {
-    font-size: 32px;
+    font-size: 28px;
   }
+
   .hi {
-    font-size: 18px;
+    font-size: 16px;
   }
-  .home .container {
-    width: 100%;
-  }
+
   .text-content {
-    font-size: 14px; /* Adjust text size */
+    font-size: 14px;
   }
+
   .card {
     width: 150px;
     height: 150px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
